@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import "tailwindcss";
+
+:root {
+    font-family: 'Google Sans', sans-serif;
+}
+
+@theme {
+    --breakpoint-xs: 480px;
+    --breakpoint-sm: 576px;
+
+    --animate-fade-in-up: fade-in-up 0.7s ease-out forwards;
+
+    @keyframes fade-in-up {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
