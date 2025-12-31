@@ -1,7 +1,7 @@
 # Task Board Documentation
 
 ## Overview
-Task Board is a modern task management application built with React. It features a dark theme, automatically saves your work, and allows you to organize tasks by dragging and dropping them.
+Task Board is a modern task management application built with React. It features a dark theme, saves your work, and allows you to organize tasks by dragging and dropping them.
 
 ## Project Structure
 The project is built using **Components**, which are like building blocks. We build small parts (like a button or a header) and combine them to create the full application.
@@ -10,7 +10,7 @@ All source code is located in the `src` folder.
 
 ### Key Components
 
-#### 1. App.jsx (The Brain)
+#### 1. App.jsx
 This is the main component that holds everything together.
 -   **Task Storage**: It keeps a list of all your tasks.
 -   **Saving Data**: It automatically saves your tasks to the browser's storage (LocalStorage). This ensures your tasks are not lost when you refresh the page.
@@ -35,8 +35,7 @@ Displays your list of tasks in a grid layout.
 -   **Sorting**: Uses a "SortableContext" to allow you to drag and reorder your tasks.
 
 #### 5. SubTask.jsx
-A smaller input form found at the bottom of each task card.
--   **Placement**: It is pinned to the bottom of the card to keep the design consistent.
+A smaller input form found at each task card.
 -   **Functionality**: Allows you to add smaller steps (subtasks) to a main task.
 
 #### 6. Footer.jsx
@@ -45,8 +44,7 @@ Displays the simple copyright text at the bottom of the page.
 ---
 
 ## Styling (Design)
-The project uses **Tailwind CSS** for styling. Instead of writing long CSS files, we use simple class names directly in the code to style elements.
--   **Example**: `bg-slate-950` makes the background dark blue, and `text-white` makes the text white.
+The project uses **Tailwind CSS** for styling.
 
 ## How to Run Locally
 
